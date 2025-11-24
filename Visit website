@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Button Message</title>
+<style>
+.button {
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #4CAF50;
+  color: white;
+  transition: 0.3s ease;
+}
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+}
+#msg {
+  display: none;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+}
+</style>
+</head>
+<body>
+
+<button class="button" onclick="document.getElementById('msg').style.display='block'">
+  Visit Website
+</button>
+
+<p id="msg">This website is only available for verified members.</p>
+
+</body>
+</html>
